@@ -1,0 +1,31 @@
+{
+  "name": "ng-lodash",
+  "version": "0.0.1",
+  "description": "An Angular module wrapper for lodash",
+  "main": "build/ng-lodash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rockabox/ng-lodash.git"
+  },
+  "keywords": [
+    "angular",
+    "lodash"
+  ],
+  "author": "Rockabox <tech@rockabox.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rockabox/ng-lodash/issues"
+  },
+  "homepage": "https://github.com/rockabox/ng-lodash",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-lodash": "~0.3.0",
+    "grunt-ngmin": "~0.0.3",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}
