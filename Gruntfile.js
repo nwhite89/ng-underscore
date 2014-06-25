@@ -1,7 +1,22 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        'bower': {
+            'install': {
+                'options': {
+                    'targetDir': './lib'
+                }
+            }
+        },
         'clean': {
-            tmp: ['tmp']
+            'tmp': ['tmp']
+        },
+        'karma': {
+            'options': {
+                'configFile': 'karma.conf.js',
+            },
+            'test': {
+                'reporters': ['progress']
+            }
         },
         'lodash': {
             'target': {
@@ -26,26 +41,46 @@ module.exports = function(grunt) {
             }
         },
         'ngmin': {
-            dist: {
-                src: 'build/ng-lodash.js',
-                dest: 'tmp/ng-lodash.min.js'
+            'dist': {
+                'src': 'build/ng-lodash.js',
+                'dest': 'tmp/ng-lodash.min.js'
             }
         },
         'uglify': {
-            dist: {
-                options: {
-                    compress: true,
-                    preserveComments: 'some'
+            'dist': {
+                'options': {
+                    'compress': true,
+                    'preserveComments': 'some'
                 },
-                files: {
+                'files': {
                     'build/ng-lodash.min.js': 'tmp/ng-lodash.min.js'
                 }
             }
-        },
+        }
     });
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['lodash', 'ngmin', 'uglify', 'clean:tmp']);
+    // Registers a task to run Karma tests and installs any pre-requisites
+    // needed.
+    grunt.registerTask('test', [
+        'bower:install',
+        'karma:test'
+    ]);
+
+    // Registers a task to build the ngLodash module
+    grunt.registerTask('build', [
+        'lodash',
+        'ngmin',
+        'uglify',
+        'clean:tmp'
+    ]);
+
+    // Registers a task to build and test ready for distribution
+    grunt.registerTask('dist', [
+        'build',
+        'test'
+    ]);
+
     grunt.registerTask('default', ['build']);
 };
