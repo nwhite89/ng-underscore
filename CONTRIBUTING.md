@@ -3,7 +3,17 @@
 This document outlines general guidelines, best practises and coding style rules
 for developers contributing to the project.
 
-## Pull-requests
+## Contents
+
+- [Pull requests](#pull-requests)
+- [Bugs](#bugs)
+- [Features](#features)
+- [Node dependencies](#node-dependencies)
+- [Frontend dependencies](#frontend-dependencies)
+- [Using grunt](#grunt)
+- [JS Guidelines](#js)
+
+## Pull requests
 
 If you fixed or added something useful to the project, you can send
 pull-request. It will be reviewed by maintainer and accepted, or commented for
@@ -21,13 +31,6 @@ and send us the fix.
 ## Features
 
 It you've got an idea about a new feature, it's most likely that you'll have to implement it on your own. If you cannot implement the feature, but it is very important, you can create an issue at GitHub, but expect it to be declined by the maintainer.
-
-## Contents
-
-- [Node dependencies](#node-dependencies)
-- [Frontend dependencies](#frontend-dependencies)
-- [Using grunt](#grunt)
-- [JS Guidelines](#js)
 
 ## Node dependencies
 

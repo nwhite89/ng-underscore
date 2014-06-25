@@ -15,11 +15,11 @@ module.exports = function(grunt) {
                     'node'
                 ],
                 'iife': 'angular.module(\'ngLodash\', [])' +
-                            '.value(\'lodash\', null)' +
-                            '.config([\'$provide\', function ($provide) { ' +
+                            '.constant(\'lodash\', null)' +
+                            '.config(function ($provide) { ' +
                                 '%output% ' +
-                                '$provide.value(\'lodash\', _);' +
-                            '}]);',
+                                '$provide.constant(\'lodash\', _);' +
+                            '});',
                 'flags': [
                     'debug'
                 ]
