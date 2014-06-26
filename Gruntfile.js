@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         'bower': {
             'install': {
@@ -10,9 +10,21 @@ module.exports = function(grunt) {
         'clean': {
             'tmp': ['tmp']
         },
+        'jshint': {
+            'src': [
+                './*.js',
+                './test/*.js'
+            ],
+            'options': {
+                'jshintrc': '.jshintrc'
+            }
+        },
+        'jscs': {
+            'src': '<%= jshint.src %>'
+        },
         'karma': {
             'options': {
-                'configFile': 'karma.conf.js',
+                'configFile': 'karma.conf.js'
             },
             'test': {
                 'reporters': ['progress']
@@ -64,6 +76,8 @@ module.exports = function(grunt) {
     // Registers a task to run Karma tests and installs any pre-requisites
     // needed.
     grunt.registerTask('test', [
+        'jshint',
+        'jscs',
         'bower:install',
         'karma:test'
     ]);
