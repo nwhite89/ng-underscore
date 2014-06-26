@@ -11,10 +11,11 @@
     "url": "git://github.com/rockabox/ng-lodash.git"
   },
   "keywords": [
+    "nglodash",
     "angular",
     "lodash"
   ],
-  "author": "Rockabox <tech@rockabox.com>",
+  "author": ["Rockabox <tech@rockabox.com> (http://rockabox.com)"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rockabox/ng-lodash/issues"
