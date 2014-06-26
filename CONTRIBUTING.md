@@ -1,6 +1,6 @@
 # Contributing
 
-This document outlines general guidelines, best practises and coding style rules
+This document outlines general guidelines, best practices and coding style rules
 for developers contributing to the project.
 
 ## Contents
@@ -15,8 +15,8 @@ for developers contributing to the project.
 
 ## Pull requests
 
-If you fixed or added something useful to the project, you can send
-pull-request. It will be reviewed by maintainer and accepted, or commented for
+If you fixed or added something useful to the project, you can send a
+pull request. It will be reviewed by maintainer and accepted, or commented for
 rework, or declined.
 
 ## Bugs
@@ -30,7 +30,10 @@ and send us the fix.
 
 ## Features
 
-It you've got an idea about a new feature, it's most likely that you'll have to implement it on your own. If you cannot implement the feature, but it is very important, you can create an issue at GitHub, but expect it to be declined by the maintainer.
+If you've got an idea about a new feature, it's most likely that you'll have to
+implement it on your own. If you cannot implement the feature, but it is very
+important, you can create an issue at GitHub, but expect it to be declined by
+the maintainer.
 
 ## Node dependencies
 

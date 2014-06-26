@@ -4,7 +4,7 @@
   "description": "An Angular module wrapper for lodash",
   "main": "build/ng-lodash.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt dist"
   },
   "repository": {
     "type": "git",
