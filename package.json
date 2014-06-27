@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/rockabox/ng-lodash",
   "devDependencies": {
+    "bower": "^1.3.5",
     "grunt": "~0.4.5",
     "grunt-bower-task": "~0.3.4",
     "grunt-cli": "~0.1.13",
@@ -41,8 +42,5 @@
   },
   "engines": {
     "node": "~0.10.0"
-  },
-  "dependencies": {
-    "bower": "^1.3.5"
   }
 }
