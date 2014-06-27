@@ -7,9 +7,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        'clean': {
-            'tmp': ['tmp']
-        },
         'jshint': {
             'src': [
                 './*.js',
@@ -88,8 +85,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'lodash',
         'ngmin',
-        'uglify',
-        'clean:tmp'
+        'uglify'
     ]);
 
     // Registers a task to build and test ready for distribution
