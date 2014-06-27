@@ -55,17 +55,19 @@ module.exports = function (grunt) {
         'ngmin': {
             'dist': {
                 'src': 'build/ng-lodash.js',
-                'dest': 'tmp/ng-lodash.min.js'
+                'dest': 'build/ng-lodash.js'
             }
         },
         'uglify': {
             'dist': {
                 'options': {
-                    'compress': true,
+                    'compress': {
+                        unused: false
+                    },
                     'preserveComments': 'some'
                 },
                 'files': {
-                    'build/ng-lodash.min.js': 'tmp/ng-lodash.min.js'
+                    'build/ng-lodash.min.js': 'build/ng-lodash.js'
                 }
             }
         }

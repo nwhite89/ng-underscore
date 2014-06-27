@@ -15,7 +15,9 @@
     "angular",
     "lodash"
   ],
-  "author": ["Rockabox <tech@rockabox.com> (http://rockabox.com)"],
+  "author": [
+    "Rockabox <tech@rockabox.com> (http://rockabox.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rockabox/ng-lodash/issues"
@@ -39,5 +41,8 @@
   },
   "engines": {
     "node": "~0.10.0"
+  },
+  "dependencies": {
+    "bower": "^1.3.5"
   }
 }
