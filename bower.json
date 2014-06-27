@@ -1,6 +1,6 @@
 {
   "name": "ng-lodash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Angular module wrapper for lodash",
   "author": ["Rockabox <tech@rockabox.com> (http://www.rockabox.com)"],
   "license": "MIT",
