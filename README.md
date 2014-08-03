@@ -2,12 +2,12 @@
 [![Build Status](https://travis-ci.org/nwhite89/ng-underscore.svg?branch=master)](https://travis-ci.org/nwhite89/ng-underscore)
 [![devDependency Status](https://david-dm.org/nwhite89/ng-underscore/dev-status.svg)](https://david-dm.org/nwhite89/ng-underscore#info=devDependencies)
 
-ng-lodash
+ng-underscore
 =========
 
-This is a wrapper for the utility library [Lo-Dash](http://lodash.com/) for
-Angular JS. One aim for this project is to ensure Lo-Dash doesn't have to be
-left on the window, and we use Lo-Dash with Angular, in the normal depenedency
+This is a wrapper for the utility library [Underscore](http://underscorejs.org) for
+Angular JS. One aim for this project is to ensure Underscore doesn't have to be
+left on the window, and we use Underscore with Angular, in the normal depenedency
  injection manner.
 
 ## Installing
@@ -17,6 +17,20 @@ left on the window, and we use Lo-Dash with Angular, in the normal depenedency
 After loading Angular
 
 ```<script src="ng-underscore.min.js"></script>```
+
+Add the module as a dependency to your app
+
+```js
+var app = angular.module('app', ['ngUnderscore']);
+```
+
+Use it within a controller
+
+```js
+var YourCtrl = app.controller('yourController', function($scope, underscore) {
+    $scope.size = underscore.size({one: 1, two: 2, three: 3});
+});
+```
 
 ## Developing
 
