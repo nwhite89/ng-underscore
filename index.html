@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Ng-underscore : An Angular wrapper for Underscore">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Ng-underscore</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/nwhite89/ng-underscore">View on GitHub</a>
+
+          <h1 id="project_title">Ng-underscore</h1>
+          <h2 id="project_tagline">An Angular wrapper for Underscore</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/nwhite89/ng-underscore/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/nwhite89/ng-underscore/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a>
+<a href="https://travis-ci.org/nwhite89/ng-underscore"><img src="https://travis-ci.org/nwhite89/ng-underscore.svg?branch=master" alt="Build Status"></a>
+<a href="https://david-dm.org/nwhite89/ng-underscore#info=devDependencies"><img src="https://david-dm.org/nwhite89/ng-underscore/dev-status.svg" alt="devDependency Status"></a></p>
+
+<h1>
+<a name="ng-underscore" class="anchor" href="#ng-underscore"><span class="octicon octicon-link"></span></a>ng-underscore</h1>
+
+<p>This is a wrapper for the utility library <a href="http://underscorejs.org">Underscore</a> for
+Angular JS. One aim for this project is to ensure Underscore doesn't have to be
+left on the window, and we use Underscore with Angular, in the normal depenedency
+ injection manner.</p>
+
+<h2>
+<a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h2>
+
+<p><code>bower install ng-underscore</code></p>
+
+<p>After loading Angular</p>
+
+<p><code>&lt;script src="ng-underscore.min.js"&gt;&lt;/script&gt;</code></p>
+
+<p>Add the module as a dependency to your app</p>
+
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'app'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'ngUnderscore'</span><span class="p">]);</span>
+</pre></div>
+
+<p>Use it within a controller</p>
+
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">YourCtrl</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'yourController'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">,</span> <span class="nx">underscore</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$scope</span><span class="p">.</span><span class="nx">size</span> <span class="o">=</span> <span class="nx">underscore</span><span class="p">.</span><span class="nx">size</span><span class="p">({</span><span class="nx">one</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">two</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">three</span><span class="o">:</span> <span class="mi">3</span><span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="developing" class="anchor" href="#developing"><span class="octicon octicon-link"></span></a>Developing</h2>
+
+<p>To help us develop this module, we are using Grunt some tasks that may be
+helpful for you to know about are:</p>
+
+<h3>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h3>
+
+<p>This command will run JSHint and JSCS testing JS Files (note files within build)
+are not tested, it will also run your local build of the module with all of the
+Karma tests:</p>
+
+<p><code>grunt test</code> it can also be run by using <code>npm test</code></p>
+
+<h3>
+<a name="build" class="anchor" href="#build"><span class="octicon octicon-link"></span></a>Build</h3>
+
+<p>This command will build the module, run it through ngMin and then create a
+minified version of the module, ready for distribution:</p>
+
+<p><code>grunt build</code></p>
+
+<h3>
+<a name="dist" class="anchor" href="#dist"><span class="octicon octicon-link"></span></a>Dist</h3>
+
+<p>This command will build the module initially and then run the test suite.
+Testing with JSHint, JSCS and Karma:</p>
+
+<p><code>grunt dist</code></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Ng-underscore maintained by <a href="https://github.com/nwhite89">nwhite89</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
