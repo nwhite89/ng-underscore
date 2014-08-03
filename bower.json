@@ -1,13 +1,15 @@
 {
-  "name": "ng-lodash",
-  "version": "0.0.2",
-  "description": "An Angular module wrapper for lodash",
-  "author": ["Rockabox <tech@rockabox.com> (http://www.rockabox.com)"],
+  "name": "ng-underscore",
+  "version": "0.0.1",
+  "description": "An Angular wrapper for Underscore",
+  "author": [
+    "Nick White <nickswhite89@gmail.com> (http://toxicd.co.uk)"
+  ],
   "license": "MIT",
   "keywords": [
-    "nglodash",
+    "ngunderscore",
     "angular",
-    "lodash"
+    "underscore"
   ],
   "ignore": [
     "test",
@@ -17,10 +19,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/rockabox/ng-lodash.git"
+    "url": "git://github.com/nwhite89/ng-underscore.git"
   },
   "main": [
-    "build/ng-lodash.js"
+    "build/ng-underscore.js"
   ],
   "dependencies": {
     "angular": "~1.2.0"

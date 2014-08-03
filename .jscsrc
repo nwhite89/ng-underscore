@@ -68,7 +68,7 @@
         "<",
         "<="
     ],
-    "disallowLeftStickedOperators": [
+    "requireSpaceBeforeBinaryOperators": [
         "?",
         "=",
         "+",
@@ -84,7 +84,7 @@
         "<",
         "<="
     ],
-    "disallowRightStickedOperators": [
+    "requireSpaceAfterBinaryOperators": [
         "?",
         "=",
         "+",
@@ -98,9 +98,10 @@
         ">",
         ">=",
         "<",
-        "<="
+        "<=",
+        ","
     ],
-    "requireLeftStickedOperators": [","],
+    "disallowSpaceBeforeBinaryOperators": [","],
     "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
     "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
     "requireSpaceBeforeBinaryOperators": [
