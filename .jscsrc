@@ -142,7 +142,7 @@
     "disallowTrailingWhitespace": true,
     "disallowTrailingComma": true,
     "disallowKeywordsOnNewLine": ["else"],
-    "maximumLineLength": 80,
+    "maximumLineLength": 120,
     "safeContextKeyword": ["$this"],
     "disallowYodaConditions": true,
     "validateJSDoc": {

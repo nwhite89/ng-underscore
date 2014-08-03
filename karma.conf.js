@@ -3,8 +3,8 @@ module.exports = function (config) {
         files: [
             'lib/angular/angular.js',
             'lib/angular-mocks/angular-mocks.js',
-            'build/ng-lodash.js',
-            'test/ng-lodash.spec.js'
+            'build/ng-underscore.js',
+            'test/ng-underscore.spec.js'
         ],
         exclude: [],
         browsers: ['PhantomJS'],

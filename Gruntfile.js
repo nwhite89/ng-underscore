@@ -29,20 +29,20 @@ module.exports = function (grunt) {
         },
         'lodash': {
             'target': {
-                'dest': 'build/ng-lodash.js'
+                'dest': 'build/ng-underscore.js'
             },
             'options': {
-                'modifier': 'modern',
+                'modifier': 'underscore',
                 'exports': [
                     'amd',
                     'commonjs',
                     'node'
                 ],
-                'iife': 'angular.module(\'ngLodash\', [])' +
-                            '.constant(\'lodash\', null)' +
+                'iife': 'angular.module(\'ngUnderscore\', [])' +
+                            '.constant(\'underscore\', null)' +
                             '.config(function ($provide) { ' +
                                 '%output% ' +
-                                '$provide.constant(\'lodash\', _);' +
+                                '$provide.constant(\'underscore\', lodash);' +
                             '});',
                 'flags': [
                     'debug'
@@ -51,8 +51,8 @@ module.exports = function (grunt) {
         },
         'ngmin': {
             'dist': {
-                'src': 'build/ng-lodash.js',
-                'dest': 'build/ng-lodash.js'
+                'src': 'build/ng-underscore.js',
+                'dest': 'build/ng-underscore.js'
             }
         },
         'uglify': {
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                     'preserveComments': 'some'
                 },
                 'files': {
-                    'build/ng-lodash.min.js': 'build/ng-lodash.js'
+                    'build/ng-underscore.min.js': 'build/ng-underscore.js'
                 }
             }
         }
