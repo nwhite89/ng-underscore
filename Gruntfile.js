@@ -49,7 +49,7 @@ module.exports = function (grunt) {
                 ]
             }
         },
-        'ngmin': {
+        'ngAnnotate': {
             'dist': {
                 'src': 'build/ng-underscore.js',
                 'dest': 'build/ng-underscore.js'
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
     // Registers a task to build the ngLodash module
     grunt.registerTask('build', [
         'lodash',
-        'ngmin',
+        'ngAnnotate',
         'uglify'
     ]);
 

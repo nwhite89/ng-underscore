@@ -3,7 +3,7 @@ module.exports = function (config) {
         files: [
             'lib/angular/angular.js',
             'lib/angular-mocks/angular-mocks.js',
-            'build/ng-underscore.js',
+            'build/ng-underscore.min.js',
             'test/ng-underscore.spec.js'
         ],
         exclude: [],
