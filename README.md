@@ -1,6 +1,6 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![Build Status](https://travis-ci.org/rockabox/ng-lodash.svg?branch=master)](https://travis-ci.org/rockabox/ng-lodash)
-[![devDependency Status](https://david-dm.org/rockabox/ng-lodash/dev-status.svg)](https://david-dm.org/rockabox/ng-lodash#info=devDependencies)
+[![Build Status](https://travis-ci.org/nwhite89/ng-underscore.svg?branch=master)](https://travis-ci.org/nwhite89/ng-underscore)
+[![devDependency Status](https://david-dm.org/nwhite89/ng-underscore/dev-status.svg)](https://david-dm.org/nwhite89/ng-underscore#info=devDependencies)
 
 ng-lodash
 =========
@@ -12,11 +12,11 @@ left on the window, and we use Lo-Dash with Angular, in the normal depenedency
 
 ## Installing
 
-```bower install ngLodash```
+```bower install ng-underscore```
 
 After loading Angular
 
-```<script src="ng-lodash.min.js"></script>```
+```<script src="ng-underscore.min.js"></script>```
 
 ## Developing
 
