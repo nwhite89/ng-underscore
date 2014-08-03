@@ -1,6 +1,6 @@
 {
   "name": "ng-underscore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An Angular module wrapper for underscore",
   "main": "build/ng-underscore.js",
   "scripts": {

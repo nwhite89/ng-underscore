@@ -1,6 +1,6 @@
 {
   "name": "ng-underscore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An Angular wrapper for Underscore",
   "author": [
     "Nick White <nickswhite89@gmail.com> (http://toxicd.co.uk)"
@@ -13,9 +13,15 @@
   ],
   "ignore": [
     "test",
-    "*.",
+    ".bowerrc",
+    ".editorconfig",
+    ".gitignore",
+    ".jscsrc",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js",
     "karma.conf.js",
-    "Gruntfile.js"
+    "package.json"
   ],
   "repository": {
     "type": "git",
